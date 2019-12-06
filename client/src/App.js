@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import PlayerList from './components/PayerList';
+import PlayerList from './components/PlayerList';
+import NavBar from './components/NavBar';
 import './App.css';
 
 
@@ -8,12 +9,11 @@ class App extends Component {
     super();
     
   }
-
   
   render() {
     return (
       <div className="App">
-        <h1>Women's World Cup Players</h1>
+        <NavBar />
         <PlayerList />
       </div>
     );
