@@ -10,8 +10,8 @@ it('renders without crashing', () => {
 });
 
 test("Header is rendered", () => {
-  const { getByText } = render(<App />);
+  const { getByTestId} = render(<App />);
 
-  getByText("Women's World Cup Players");
+  getByTestId(/Player-Header/i);;
 });
 
